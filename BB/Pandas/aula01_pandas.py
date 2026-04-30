@@ -56,3 +56,11 @@ print(df_csv.head(2)) # Mostra as 2 primeiras linhas
 print(df_csv.shape) # Mostra o número de linhas e colunas
 print(df_csv.info()) # Mostra informações gerais sobre o DataFrame
 print(df_csv.describe()) # Mostra estatísticas gerais sobre o DataFrame
+print(df_csv[ df_csv ['Idade'] > 20 ]) # Mostra as linhas com idade maior que 20
+print(df_csv[ (df_csv['Idade'] < 20) & (df_csv['Sexo'] == 'Masculino') ]) # Mostra as linhas com idade menor que 20 e sexo Masculino
+print(df_csv.loc[0:2, ['Nome', 'Idade']]) # Mostra as linhas 0, 1 e 2 com as colunas Nome e Idade
+df_csv ['Coluna Teste'] = df_csv['Idade'] * 2 # Cria uma nova coluna com o dobro da idade
+print(df_csv)
+del df_csv['Coluna Teste'] # Apaga uma coluna
+print(df_csv)
+#df_csv.drop(2) # Apaga uma linha
