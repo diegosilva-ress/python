@@ -1,5 +1,3 @@
-import numpy as np
-
 """
 NumPy é uma biblioteca do Python usada para trabalhar com arrays.
 Array é parecido com uma lista, mas é mais rápido e mais usado para cálculos.
@@ -11,6 +9,8 @@ O "as np" serve para dar um apelido para a biblioteca.
 Assim, em vez de escrever numpy.array(), podemos escrever np.array().
 
 """
+
+import numpy as np
 
 numeros = np.array([1, 2, 3, 4, 5]) #unidimensional
 print('unidimensional')

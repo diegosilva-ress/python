@@ -1,5 +1,3 @@
-import pandas as pd
-
 """
 Pandas é uma biblioteca do Python usada para trabalhar com dados em formato de tabela.
 
@@ -29,6 +27,7 @@ import pandas as pd
 
 Assim, em vez de escrever pandas.DataFrame(), podemos escrever pd.DataFrame().
 """
+import pandas as pd
 
 dados = [
     ['Diego', 33, 'Masculino'],
