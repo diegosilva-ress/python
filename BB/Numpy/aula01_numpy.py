@@ -40,3 +40,11 @@ print(ones)
 print(ones.shape) # Mostra a forma do array
 print(ones.size) # Mostra o tamanho do array
 print(ones.ndim) # Mostra a dimensão do array
+
+# Exemplo simples do np.where
+print('\nExemplo np.where:')
+arr = np.array([1, 5, 3, 8, 2, 7])
+# np.where(condição, valor_se_verdadeiro, valor_se_falso)
+resultado = np.where(arr > 4, 'Maior que 4', 'Menor ou igual a 4')
+print(f'Array original: {arr}')
+print(f'Resultado: {resultado}')
